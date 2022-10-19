@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: #303841;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1
+{
+    color: #EEEEEE;
+    text-align: center;
+}
+
+section
+{
+    background: #3A4750;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
+}
+
+.btn41-43 {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-41 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+  }
+  
+  .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-41:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .btn-41:active {
+    top: 2px;
+  }
