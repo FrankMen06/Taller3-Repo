@@ -1,3 +1,6 @@
+
+
+
 function guardarDatos(){
     localStorage.nombre = document.getElementById("nombres").value;
     localStorage.dui = document.getElementById("dui").value;
@@ -25,5 +28,24 @@ function guardarDatos(){
     } else {
         document.getElementById("datos").innerHTML = "No hay Datos";
     }
+
+    //CAMBIAR VALORES DE SELECT
+    /*var marcas = new Array(2);
+    marcas["Nissan"] = ["Rogue", "Almera", "Altima", "Tiida", "Pathfinder", "Patrol", "X-Trail", "Frontier", "Sentra" ];
+    marcas["Toyota"] = ["Corolla", "Echo", "Yaris", "Avensis", "Camry", "Land Cruiser", "4 Runner", "Hilux"];
+
+    var select = document.getElementById("marca");
+    if(select.addEventListener){
+        select.addEventListener("change", function(){
+            addOptions(marcas[this.options[this.selectedIndex].text],
+                document.formulario.modelo);
+        }, false);
+    }
+    else{
+        select.attachEvent("onchange", function(){
+            addOptions(marcas[this.options[this.selectedIndex].text],
+            document.formulario.modelo);
+        });
+    }*/
 
 }
