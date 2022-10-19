@@ -6,84 +6,112 @@
     margin: 0;
 }
 
+/*diseño del body*/
 body
 {
-    background: #303841;
+    background: #EFFFFD;
     font-family: 'Open Sans', sans-serif;
 }
 
 h1
 {
-    color: #EEEEEE;
+    color: #42C2FF;
     text-align: center;
 }
 
+/*diseños para el section que se esta usando*/
+
 section
 {
-    background: #3A4750;
+    background: #eee;
     margin: 0 auto;
     padding: 10px;
     max-width: 75%;
-    max-height: 75%;
+    height: 70%;
     border-radius: 10px 5px 10px 5px;
     box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
     -webkit-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
     -moz-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
 }
 
+/*Diseños para el formulario*/
+.datos
+{
+  color: #eee;
+  margin: 0 auto;
+}
+
 .formulario
 {
-	width: 50%;
-	padding:20px;
-	border-radius:10px;
-	margin:auto;
+	width: 80%;
+  height: 50%;
+	padding: 40px;
+	border-radius: 10px;
+	margin: auto;
 	background-color:#303841;
 }
 
+/*Diseño para los input del formulario*/
+.formulario input
+{
+  width: 99%;
+  padding: 10px 0;
+}
+
+.formulario select
+{
+  width: 98%;
+  padding: 5px 0;
+}
+
 .btn41-43 {
-    padding: 10px 25px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background: transparent;
-    outline: none !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .btn-41 {
-    border: 2px solid rgb(255, 255, 255);
-    z-index: 1;
-    color: white;
-  }
-  
-  .btn-41:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    direction: rtl;
-    z-index: -1;
-    background: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-  }
-  
-  .btn-41:hover {
-    color: rgb(0, 0, 0);
-  }
-  
-  .btn-41:hover:after {
-    left: auto;
-    right: 0;
-    width: 100%;
-  }
-  
-  .btn-41:active {
-    top: 2px;
-  }
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+
+textarea{
+  resize: none;
+}  
 
 .site-footer
 {
@@ -140,3 +168,52 @@ section
 {
   display:inline-block
 }
+
+.btn41-43 {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-41 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: rgb(250, 250, 250);
+  }
+  
+  .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-41:hover {
+    color: rgb(0, 172, 240);
+  }
+  
+  .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .btn-41:active {
+    top: 2px;
+  }
+
+textarea{
+    resize: none;
+}  
