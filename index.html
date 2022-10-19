@@ -14,23 +14,69 @@
 
     <section class="section">
         <div class="datos">
+
             <form id="fomulario" class="formulario">
-                //Formulario para ingresar datos
-                <input type="text" placeholder="Nombre Completo">
-                <input type="text" placeholder="DUI">
-                <input type="text" placeholder="NIT">
-          
-                <a href="/buttons/41" class="btn41-43 btn-41">Añadir tareas</a>
+
+                <fieldset>
+
+                    <legend>Datos del Conductor</legend>
+
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Nombre" required id="nombre">
+
+                    <label for="DUI">DUI</label>
+                    <input type="number" id="dui" placeholder="Todo junto sin guiones" pattern="[0/9]" required id="DUI">
+
+                    <label for="nit">NIT</label>
+                    <input type="number" id="nit" placeholder="Todo junto sin guiones" pattern="[0/9]" required id="NIT">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Datos del Automovil</legend>
+
+                    <label for="marca">Marca</label>
+                    <select name="" id="">
+                        <option value="nissan">Nissan</option>
+                    </select>
+
+                    <label for="modelo">Modelo</label>
+                    <select name="" id=""></select>
+
+                    <label for="año">Año</label>
+                    <input type="number" id="anio" min="2000" max="2023" required>
+
+                    
+                    <label for="color">Color</label>
+                    <input type="text" id="color"  required>
+
+                    <label for="color">Placa</label>
+                    <input type="text" id="placa"  required>
+
+                    <br>
+
+                    <label for="color">Falla</label>
+                    <textarea name="falla" id="fallas" rows="10" cols="40" maxlength="200"></textarea>
+
+
+                </fieldset>
+
+                <br><br>
+
+                <a href="/buttons/41" class="btn41-43 btn-41" value="registrar">Añadir tareas</a>
+               
               </form>
         </div>
     </section>
-    
+
     <footer class="site-footer">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <h6>Desarrollo de Aplic. Web con Soft. Interpret. en el Cliente </h6>
-              <p class="text-justify">Investigación Aplicada 2 sobre SessionStorage, LocalStorage e IndexedDB y con sus respectivos ejemplos</p>
+              <p class="text-justify">Taller Practico 2</p>
             </div>
 
           </div>
@@ -46,6 +92,5 @@
           </div>
         </div>
   </footer>
-    
 </body>
 </html>
