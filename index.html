@@ -20,6 +20,7 @@
                 <fieldset>
 
                     <legend>Datos del Conductor</legend>
+                    <br>
 
                     <label for="Nombre">Nombre</label>
                     <input type="text" id="nombres" name="nombre"  placeholder="Nombre" required="required">
@@ -37,10 +38,11 @@
                 <br>
 
                 <fieldset>
+                   
                     <legend>Datos del Automovil</legend>
-
+                    <br>
                     <label for="marca">Marca</label>
-                    <select name="marca" id="marca">
+                    <select name="marca" id="marca" required>
                         <option selected disabled="">Selecciona tu marca</option>
                         <option value="Nissan">Nissan</option>
                         <option value="Toyota">Toyota</option>
@@ -52,11 +54,8 @@
                     <br>
 
                     <label for="modelo">Modelo</label>
-                    <select name="modelo" id="modelo">
-                        <option selected disabled="">Selecciona tu modelo</option>
-                        <option>Rogue</option>
-                        <option></option>
-                        <option></option>
+                    <select name="modelo" id="modelo" required>
+                        <option value="rogue">Rogue</option>
                     </select>
                     <br>
                     <br>
@@ -67,7 +66,7 @@
 
                     
                     <label for="color">Color</label>
-                    <select name="color" id="color">
+                    <select name="color" id="color" required>
                         <option selected disabled="">Selecciona el color del Automovil</option>
                         <option value="Amarillo">Amarillo</option>
                         <option value="Rojo">Rojo</option>
@@ -83,9 +82,11 @@
                     <input type="text" name="placa" id="placa"  required="required">
 
                     <br>
+                    <br>
 
                     <label for="color">Falla</label>
-                    <textarea name="falla" id="falla" cols="30" rows="4"></textarea>
+                    <br>
+                    <textarea name="falla" id="falla" cols="120" rows="4"></textarea>
 
                     
 
@@ -93,7 +94,7 @@
 
                 <br><br>
 
-                <input type="button" onclick="guardarDatos()" value="Enviar" class="">
+                <input type="button" onclick="guardarDatos()" value="Enviar" class="btn41-43 btn-41">
                
               </form>
         </div>
