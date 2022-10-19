@@ -22,15 +22,15 @@
                     <legend>Datos del Conductor</legend>
 
                     <label for="Nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre"  placeholder="Nombre" required="required">
+                    <input type="text" id="nombres" name="nombre"  placeholder="Nombre" required="required">
                     <br>
 
                     <label for="DUI">DUI</label>
-                    <input type="text" id="dui" name="dui" placeholder="Todo junto sin guiones" required="required" id="DUI">
+                    <input type="text" id="dui" name="dui" placeholder="Introduce tu DUI" required="required" id="DUI">
                     <br>
 
                     <label for="nit">NIT</label>
-                    <input type="number" id="nit" name="nit" placeholder="Todo junto sin guiones" pattern="[0/9]" required="required" id="NIT">
+                    <input type="number" id="nit" name="nit" placeholder="Introduce tu NIT" pattern="[0/9]" required="required" id="NIT">
 
                 </fieldset>
 
@@ -54,6 +54,9 @@
                     <label for="modelo">Modelo</label>
                     <select name="modelo" id="modelo">
                         <option selected disabled="">Selecciona tu modelo</option>
+                        <option>Rogue</option>
+                        <option></option>
+                        <option></option>
                     </select>
                     <br>
                     <br>
@@ -82,14 +85,15 @@
                     <br>
 
                     <label for="color">Falla</label>
-                    <textarea name="falla" id="fallas" cols="30" rows="4"></textarea>
+                    <textarea name="falla" id="falla" cols="30" rows="4"></textarea>
 
+                    
 
                 </fieldset>
 
                 <br><br>
 
-                <input type="button" onclick="guardarDatos()" value="Enviar">
+                <input type="button" onclick="guardarDatos()" value="Enviar" class="">
                
               </form>
         </div>
@@ -99,6 +103,7 @@
     <section>
         <table>
             <thead>
+            
                 <tr>
                     <th>Nombre</th>
                     <th>Dui</th>
@@ -110,10 +115,25 @@
                     <th>Placa</th>
                     <th>Falla</th>
                     <th>Fecha Ingreso</th>
-                </tr>
+                </tr>  
             </thead>
 
-    
+            <tbody>
+                <tr>
+                    <td id="name"></td>
+                    <td id="dUI"></td>
+                    <td id="nIT"></td>
+                    <td id="marcA"></td>
+                    <td id="modeLO"></td>
+                    <td id="aniO"></td>
+                    <td id="colOR"></td>
+                    <td id="plaCA"></td>
+                    <td id="faLLA"></td>
+                    <td id="ingreso"></td>
+                </tr>
+            </tbody>
+
+            <div class="dato" id="datos"></div>
 
             
         </table>
@@ -140,7 +160,7 @@
           </div>
         </div>
   </footer>
-
+<script src="js/validacion.js"></script>
   <script src="js/taller.js"></script>
 </body>
 </html>
