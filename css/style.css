@@ -1,235 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
-*
-{
-    padding: 0;
-    margin: 0;
+body{
+    background-color: cadetblue;
+    margin: 0px;
 }
 
-/*diseño del body*/
-body
-{
-    background: #EFFFFD;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1
-{
-    color: #42C2FF;
+h1{
     text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
-/*diseños para el section que se esta usando*/
-
-section
-{
-    background: #eee;
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 75%;
-    height: 70%;
-    border-radius: 10px 5px 10px 5px;
-    box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
-    -webkit-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
-    -moz-box-shadow: 13px 9px 7px -4px rgba(0,0,0,0.67);
+.container{
+    background-color: white;
 }
-
-/*Diseños para el formulario*/
-.datos
-{
-  color: #eee;
-  margin: 0 auto;
-}
-
-.formulario
-{
-	width: 80%;
-  height: 50%;
-	padding: 40px;
-	border-radius: 10px;
-	margin: auto;
-	background-color:#303841;
-}
-
-/*Diseño para los input del formulario*/
-.formulario input
-{
-  width: 99%;
-  padding: 10px 0;
-}
-
-.formulario select
-{
-  width: 98%;
-  padding: 5px 0;
-}
-
-.btn41-43 {
-  padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-
-.btn-41 {
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
-  color: rgb(255, 255, 255);
-}
-
-.btn-41:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -1;
-  background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-}
-
-.btn-41:hover {
-  color: rgb(0, 0, 0);
-}
-
-.btn-41:hover:after {
-  left: auto;
-  right: 0;
-  width: 100%;
-}
-
-.btn-41:active {
-  top: 2px;
-}
-
-textarea{
-  resize: none;
-}  
-
-.site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  position: relative;
-  top: 10vh;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-
-.btn41-43 {
-  padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-
-.btn-41 {
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
-  color: red;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.btn-41:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -1;
-  background: rgb(221, 116, 116);
-  transition: all 0.3s ease;
-}
-
-.btn-41:hover {
-  color: rgb(10, 123, 252);
-}
-
-.btn-41:hover:after {
-  left: auto;
-  right: 0;
-  width: 100%;
-}
-
-.btn-41:active {
-  top: 2px;
-}
-
-textarea{
-    resize: none;
-}  
 
 
 table {
-    border-collapse: separate;
-    border-spacing: 5px;
-    background: #000 url("gradient.gif") bottom left repeat-x;
-    color: #fff;
-    margin: 5px;
     width: 100%;
+    border: 1px solid #000;
  }
- td, th {
-    background: #fff;
-    color: #000;
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
  }
